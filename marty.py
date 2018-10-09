@@ -54,7 +54,7 @@ def MoveEyes(timedata):
   MoveEyesTimer.setInterval(random.randint(500,2000))
   oeil.setVelocity(random.randint(10,110))
   #wait servo last move
-  if not oeil.isMoving():head.eyeX.moveTo(random.uniform(0,180))
+  if not oeil.isMoving():oeil.moveTo(random.uniform(0,180))
     
 def MoveEyesStop():  
   oeil.rest()
