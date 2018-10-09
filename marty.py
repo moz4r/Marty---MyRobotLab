@@ -1,3 +1,5 @@
+import random
+
 raspi = Runtime.createAndStart("raspi","RasPi")
 adaFruit16c = Runtime.start("adaFruit16C","Adafruit16CServoDriver")
 adaFruit16c.attach(raspi,"1","0x40")
