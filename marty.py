@@ -55,8 +55,7 @@ def MoveEyes(timedata):
   if not oeil.isMoving():head.eyeX.moveTo(random.uniform(0,180))
     
 def MoveEyesStop():  
-  head.eyeX.rest()
-  head.eyeY.rest()
+  oeil.rest()
     
 MoveEyesTimer.addListener("pulse", python.name, "MoveEyes")
 MoveEyesTimer.addListener("clockStopped", python.name, "MoveEyesStop")
